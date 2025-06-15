@@ -6,10 +6,10 @@ import { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string } | Promise<{ locale: string }>;
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const resolvedParams = await params;
-  return getMergedMetadata("HomePage", resolvedParams.locale);
+  const { locale } = await params;
+  return getMergedMetadata("HomePage", locale);
 }
 
 export default function HomePage() {

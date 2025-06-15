@@ -5,13 +5,13 @@ import { useTranslations } from "next-intl";
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string } | Promise<{ locale: string }>;
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const resolvedParams = await params;
-  return getMergedMetadata("AboutPage", resolvedParams.locale);
+  const { locale } = await params;
+  return getMergedMetadata("AboutPage", locale);
 }
 
-export default function AboutPage({ params }: { params: { locale: string } }) {
+export default function AboutPage() {
   const t = useTranslations("AboutPage");
   return <div>{t("title")}</div>;
 }
