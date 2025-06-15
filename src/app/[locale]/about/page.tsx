@@ -11,7 +11,7 @@ export async function generateMetadata({
   return getMergedMetadata("AboutPage", resolvedParams.locale);
 }
 
-export default function AboutPage() {
+export default function AboutPage({ params }: { params: { locale: string } }) {
   const t = useTranslations("AboutPage");
   return <div>{t("title")}</div>;
 }
