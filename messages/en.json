@@ -1,0 +1,39 @@
+{
+    "HomePage": {
+        "title": "Hello, world!",
+        "about": "Go to the About page",
+        "metaData": {
+            "title": "About Page",
+            "description": "This is the About page of our application.",
+            "keywords": [
+                "about",
+                "application",
+                "information"
+            ],
+            "og:title": "About Page",
+            "og:description": "This is the About page of our application.",
+            "og:url": "https://tusitio.com/about",
+            "twitter:title": "About Page",
+            "twitter:description": "This is the About page of our application."
+        }
+    },
+    "AboutPage": {
+        "title": "About Us",
+        "description": "Learn more about our team and mission.",
+        "metaData": {
+            "title": "About Us",
+            "description": "Discover information about our team, values, and mission.",
+            "keywords": [
+                "about",
+                "team",
+                "mission",
+                "company"
+            ],
+            "og:title": "About Us",
+            "og:description": "Discover information about our team, values, and mission.",
+            "og:url": "https://tusitio.com/about",
+            "twitter:title": "About Us",
+            "twitter:description": "Discover information about our team, values, and mission."
+        }
+    }
+}
